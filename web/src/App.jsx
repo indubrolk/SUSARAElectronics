@@ -62,23 +62,23 @@ export default function TechnicianWebsite() {
                         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                             <div className="flex justify-between items-center h-16">
                                 <div className="flex items-center space-x-2">
-                                    <Zap className="w-8 h-8 text-blue-600"/>
+                                    <Zap className="w-8 h-8 text-yellow-500"/>
                                     <span className="text-xl font-bold text-gray-900">SUSARA Electronics</span>
                                 </div>
 
                                 {/* Desktop Menu */}
                                 <div className="hidden md:flex space-x-8">
                                     <button onClick={() => scrollToSection('home')}
-                                            className="text-gray-700 hover:text-blue-600 transition">Home
+                                            className="text-lg font-semibold relative pb-1 after:absolute after:left-1/2 after:bottom-0 after:h-[4px] after:w-0 after:bg-yellow-500 after:transition-all after:duratrelative  after:duration-300 hover:after:left-0 hover:after:w-full">Home
                                     </button>
                                     <button onClick={() => scrollToSection('services')}
-                                            className="text-gray-700 hover:text-blue-600 transition">Services
+                                            className="text-lg relative pb-1 after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-yellow-500 after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">Services
                                     </button>
                                     <button onClick={() => scrollToSection('about')}
-                                            className="text-gray-700 hover:text-blue-600 transition">About
+                                            className="text-lg relative pb-1 after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-yellow-500 after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">About
                                     </button>
                                     <button onClick={() => scrollToSection('contact')}
-                                            className="text-gray-700 hover:text-blue-600 transition">Contact
+                                            className="text-lg relative pb-1 after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-yellow-500 after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">Contact
                                     </button>
                                 </div>
 
@@ -176,12 +176,12 @@ export default function TechnicianWebsite() {
                         </div>
                     </section>
 
-                    <section id="carousel" className="py-20">
-                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                            <Carousel/>
+                    {/*<section id="carousel" className="py-20">*/}
+                    {/*    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">*/}
+                    {/*        <Carousel/>*/}
 
-                        </div>
-                    </section>
+                    {/*    </div>*/}
+                    {/*</section>*/}
 
                     {/* About Section */}
                     <section id="about" className="py-20 bg-white">
@@ -263,16 +263,16 @@ export default function TechnicianWebsite() {
                                     <MapPin className="w-12 h-12 text-blue-600 mx-auto mb-4"/>
                                     <h3 className="font-bold text-gray-900 mb-2">Location</h3>
                                     <p className="text-gray-600">Susara Electronics, Kalugamuwa Road, Kalagaha Panadaragama</p>
-                                    <p className="text-gray-600">City, State 12345</p>
+                                    <p className="text-gray-600"></p>
                                 </div>
                             </div>
                         </div>
                     </section>
 
 
-                    <div className="text-center mb-12">
+                    <div className="text-center mb-10">
                         <div id='map' className='text-3xl sm:text-4xl font-bold text-gray-900 mb-4'>
-                            <h1>Locate Us</h1>
+                            <h1 className="mb-10 mt-10">Locate Us</h1>
                             <Map/>
                         </div>
                     </div>
