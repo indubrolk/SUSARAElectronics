@@ -3,6 +3,7 @@ import { Menu, X, Zap, Wrench, Phone, Mail, MapPin, Clock, CheckCircle, ChevronR
 import Map from './components/map';
 import Preloader from './components/Preloader';
 import Carousel from './components/carousel';
+import Cover from "./assets/cover.jpg";
 
 
 export default function TechnicianWebsite() {
@@ -114,7 +115,8 @@ export default function TechnicianWebsite() {
                     </nav>
 
                     {/* Hero Section */}
-                    <section id="home" className="pt-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+                    <section id="home" className="pt-16 bg-gradient-to-br text-white">
+                        <div className="relative h-screen flex items-center justify-center"><img src={Cover} alt="Cover" className="overflow-hidden absolute inset-0 w-full h-full object-cover z-0"/>
                         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
                             <div className="text-center">
                                 <h1 className="text-4xl sm:text-5xl font-bold mb-6">
@@ -139,6 +141,7 @@ export default function TechnicianWebsite() {
                                     </button>
                                 </div>
                             </div>
+                        </div>
                         </div>
                     </section>
 
@@ -272,7 +275,7 @@ export default function TechnicianWebsite() {
 
                     <div className="text-center mb-10">
                         <div id='map' className='text-3xl sm:text-4xl font-bold text-gray-900 mb-4'>
-                            <h1 className="mb-10 mt-10">Locate Us</h1>
+                            <h1 className="mb-10 mt-5">Locate Us</h1>
                             <Map/>
                         </div>
                     </div>
