@@ -115,14 +115,14 @@ export default function TechnicianWebsite() {
                     </nav>
 
                     {/* Hero Section */}
-                    <section id="home" className="pt-16 text-white">
+                    <section id="home" className="pt-16 text-white ">
                         <div
-                            className="relative h-screen flex items-center justify-center bg-cover bg-center"
+                            className="relative h-screen flex items-center justify-center bg-cover bg-center "
                             style={{ backgroundImage: `url(${Cover})` }}
                         >
-                            <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
+                            <div className="absolute inset-0 bg-black/80" aria-hidden="true" />
                             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
-                                <h1 className="text-4xl sm:text-5xl font-bold mb-6">
+                                <h1 className="text-blue-400 text-4xl sm:text-5xl font-bold mb-6">
                                     Professional Electrical & Mechanical Services
                                 </h1>
                                 <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
