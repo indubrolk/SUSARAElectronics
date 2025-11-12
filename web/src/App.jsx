@@ -115,35 +115,37 @@ export default function TechnicianWebsite() {
                     </nav>
 
                     {/* Hero Section */}
-                    <section id="home" className="pt-16 bg-gradient-to-br text-white">
-                        <div className="relative h-screen flex items-center justify-center"><img src={Cover} alt="Cover" className="overflow-hidden absolute inset-0 w-full h-full object-cover z-0"/>
-                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-                            <div className="text-center">
+                    <section id="home" className="pt-16 text-white">
+                        <div
+                            className="relative h-screen flex items-center justify-center bg-cover bg-center"
+                            style={{ backgroundImage: `url(${Cover})` }}
+                        >
+                            <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
+                            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
                                 <h1 className="text-4xl sm:text-5xl font-bold mb-6">
                                     Professional Electrical & Mechanical Services
                                 </h1>
                                 <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
-                                    Your trusted partner for reliable electrical and mechanical solutions. Available
-                                    24/7 for emergencies.
+                                    Your trusted partner for reliable electrical and mechanical solutions. Available 24/7 for emergencies.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <button
                                         onClick={() => scrollToSection('contact')}
-                                        className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
+                                        className="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition border-white-400"
                                     >
                                         Get a Quote
                                     </button>
                                     <button
                                         onClick={() => scrollToSection('services')}
-                                        className="bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition border border-blue-400"
+                                        className="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition border-white-400"
                                     >
                                         Our Services
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        </div>
                     </section>
+
 
 
 
