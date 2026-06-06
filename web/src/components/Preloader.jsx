@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import Lottie from 'react-lottie-player';
 import animation from '../assets/loader.json';
 

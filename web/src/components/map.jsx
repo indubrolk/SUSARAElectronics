@@ -1,6 +1,4 @@
-import React from  'react'
-
-export const map = () => {
+export const Map = () => {
     return (
         <div className="bg-white rounded-lg shadow-lg overflow-hidden p-5">
             <div className="h-96 w-full">
@@ -19,4 +17,4 @@ export const map = () => {
     )
 }
 
-export default map;
+export default Map;

@@ -70,7 +70,7 @@ export default function TechnicianWebsite() {
                                 {/* Desktop Menu */}
                                 <div className="hidden md:flex space-x-8">
                                     <button onClick={() => scrollToSection('home')}
-                                            className="text-lg font-semibold relative pb-1 after:absolute after:left-1/2 after:bottom-0 after:h-[4px] after:w-0 after:bg-yellow-500 after:transition-all after:duratrelative  after:duration-300 hover:after:left-0 hover:after:w-full">Home
+                                            className="text-lg font-semibold relative pb-1 after:absolute after:left-1/2 after:bottom-0 after:h-[4px] after:w-0 after:bg-yellow-500 after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">Home
                                     </button>
                                     <button onClick={() => scrollToSection('services')}
                                             className="text-lg relative pb-1 after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-yellow-500 after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">Services
