@@ -115,34 +115,65 @@ export default function TechnicianWebsite() {
                     </nav>
 
                     {/* Hero Section */}
-                    <section id="home" className="pt-16 text-white ">
+                    <section id="home" className="pt-16 text-white">
                         <div
-                            className="relative h-screen flex items-center justify-center bg-cover bg-center "
+                            className="relative h-screen flex items-center justify-center bg-cover bg-center"
                             style={{ backgroundImage: `url(${Cover})` }}
                         >
                             <div className="absolute inset-0 bg-black/80" aria-hidden="true" />
                             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
-                                <h1 className="text-blue-400 text-4xl sm:text-5xl font-bold mb-6">
+                                <h1
+                                    className="text-blue-400 text-4xl sm:text-5xl font-bold mb-6"
+                                    style={{
+                                        animation: !loading ? 'floatUp 0.8s ease-out forwards' : 'none',
+                                        opacity: 0,
+                                    }}
+                                >
                                     Professional Electrical & Mechanical Services
                                 </h1>
-                                <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
+                                <p
+                                    className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto"
+                                    style={{
+                                        animation: !loading ? 'floatUp 0.8s ease-out 0.3s forwards' : 'none',
+                                        opacity: 0,
+                                    }}
+                                >
                                     Your trusted partner for reliable electrical and mechanical solutions. Available 24/7 for emergencies.
                                 </p>
-                                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                                <div
+                                    className="flex flex-col sm:flex-row gap-4 justify-center"
+                                    style={{
+                                        animation: !loading ? 'floatUp 0.8s ease-out 0.6s forwards' : 'none',
+                                        opacity: 0,
+                                    }}
+                                >
                                     <button
                                         onClick={() => scrollToSection('contact')}
-                                        className="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition border-white-400"
+                                        className="bg-yellow-600 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition"
                                     >
                                         Get a Quote
                                     </button>
                                     <button
                                         onClick={() => scrollToSection('services')}
-                                        className="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition border-white-400"
+                                        className="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition"
                                     >
                                         Our Services
                                     </button>
                                 </div>
                             </div>
+
+                            <style>{`
+            @keyframes floatUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(40px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        `}</style>
                         </div>
                     </section>
 
@@ -291,7 +322,7 @@ export default function TechnicianWebsite() {
                                 <span className="text-xl font-bold">SUSARA Electronics</span>
                             </div>
                             <p className="text-gray-400 mb-2">Professional Electrical & Mechanical Services</p>
-                            <p className="text-gray-500 text-sm">© 2025 SUSARA Electronics. All rights reserved.</p>
+                            <p className="text-gray-500 text-sm">© {new Date().getFullYear()} SUSARA Electronics. All rights reserved.</p>
                         </div>
                     </footer>
                 </div>
