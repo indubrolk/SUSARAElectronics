@@ -4,6 +4,9 @@ import Map from './components/map';
 import Preloader from './components/Preloader';
 import Carousel from './components/carousel';
 import Cover from "./assets/cover.jpg";
+import AboutPremium from './components/AboutPremium';
+import ScrollProgressBar from './components/ScrollProgressBar';
+import TopBar from './components/TopBar';
 
 
 export default function TechnicianWebsite() {
@@ -54,13 +57,17 @@ export default function TechnicianWebsite() {
     return (
 
         <>
+            <ScrollProgressBar />
             <Preloader show={loading} />
 
             <main className={loading ? 'pointer-events-none select-none min-h-dvh blur-sm' : ''}>
                 <div className="min-h-screen bg-gray-50">
-                    {/* Navigation */}
-                    <nav className="bg-white shadow-md fixed w-full top-0 z-50">
-                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    {/* Header */}
+                    <header className="fixed w-full top-0 z-50 bg-white shadow-md">
+                        <TopBar />
+                        {/* Navigation */}
+                        <nav className="w-full">
+                            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                             <div className="flex justify-between items-center h-16">
                                 <div className="flex items-center space-x-2">
                                     <Zap className="w-8 h-8 text-yellow-500"/>
@@ -113,9 +120,10 @@ export default function TechnicianWebsite() {
                             </div>
                         )}
                     </nav>
+                    </header>
 
                     {/* Hero Section */}
-                    <section id="home" className="pt-16 text-white">
+                    <section id="home" className="pt-16 md:pt-[104px] text-white">
                         <div
                             className="relative h-screen flex items-center justify-center bg-cover bg-center"
                             style={{ backgroundImage: `url(${Cover})` }}
@@ -176,9 +184,8 @@ export default function TechnicianWebsite() {
         `}</style>
                         </div>
                     </section>
-
-
-
+                    
+                    <AboutPremium />
 
                     {/* Services Section */}
                     <section id="services" className="py-20">
@@ -220,7 +227,7 @@ export default function TechnicianWebsite() {
                     {/*</section>*/}
 
                     {/* About Section */}
-                    <section id="about" className="py-20 bg-white">
+                    <section id="why-choose-us" className="py-20 bg-white">
                         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                             <div className="grid md:grid-cols-2 gap-12 items-center">
                                 <div>
