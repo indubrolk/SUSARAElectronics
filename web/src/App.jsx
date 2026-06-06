@@ -284,19 +284,19 @@ export default function TechnicianWebsite() {
 
                             <div className="grid md:grid-cols-3 gap-8">
                                 <div className="bg-white rounded-lg p-6 shadow-md text-center">
-                                    <Phone className="w-12 h-12 text-blue-600 mx-auto mb-4"/>
+                                    <Phone className="w-12 h-12 text-yellow-500 mx-auto mb-4"/>
                                     <h3 className="font-bold text-gray-900 mb-2">Phone</h3>
                                     <p className="text-gray-600">+94 77 081 8427</p>
                                     <p className="text-sm text-gray-500 mt-1">Available 24/7</p>
                                 </div>
                                 <div className="bg-white rounded-lg p-6 shadow-md text-center">
-                                    <Mail className="w-12 h-12 text-blue-600 mx-auto mb-4"/>
+                                    <Mail className="w-12 h-12 text-yellow-500 mx-auto mb-4"/>
                                     <h3 className="font-bold text-gray-900 mb-2">Email</h3>
                                     <p className="text-gray-600">susaraelectronics@gmail.com</p>
                                     <p className="text-sm text-gray-500 mt-1">We respond within 24hrs</p>
                                 </div>
                                 <div className="bg-white rounded-lg p-6 shadow-md text-center">
-                                    <MapPin className="w-12 h-12 text-blue-600 mx-auto mb-4"/>
+                                    <MapPin className="w-12 h-12 text-yellow-500 mx-auto mb-4"/>
                                     <h3 className="font-bold text-gray-900 mb-2">Location</h3>
                                     <p className="text-gray-600">Susara Electronics, Kalugamuwa Road, Kalagaha Panadaragama</p>
                                     <p className="text-gray-600"></p>
