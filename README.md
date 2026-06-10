@@ -1,5 +1,7 @@
 # SUSARA Electronics — Website (React + Vite)
 
+---
+
 The website of SUSARA Electronics company. A React application built with Vite and styled with Tailwind CSS. Includes a simple Business Assistant chatbot that can answer common questions about hours, contact, and location.
 
 - App lives under the `web/` directory
