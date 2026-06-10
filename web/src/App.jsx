@@ -325,7 +325,7 @@ export default function TechnicianWebsite() {
                     <footer className="bg-gray-900 text-white py-8">
                         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                             <div className="flex items-center justify-center space-x-2 mb-4">
-                                <Zap className="w-6 h-6 text-blue-400"/>
+                                <Zap className="w-6 h-6 text-yellow-500"/>
                                 <span className="text-xl font-bold">SUSARA Electronics</span>
                             </div>
                             <p className="text-gray-400 mb-2">Professional Electrical & Mechanical Services</p>
